@@ -1,0 +1,16 @@
+Create a Node.js script named generateData.js that generates 5 synthetic e-commerce CSV files:
+
+1. users.csv -> id, name, email, created_at
+2. products.csv -> id, name, category, price
+3. orders.csv -> id, user_id, order_date, total_amount
+4. order_items.csv -> id, order_id, product_id, quantity, item_price
+5. payments.csv -> id, order_id, payment_method, payment_status, payment_date
+
+Requirements:
+- Generate realistic, relational synthetic data
+- user_ids referenced in orders must exist in users
+- product_ids referenced in order_items must exist in products
+- orders referenced in payments must exist
+- Ensure price * quantity sums match order total_amount
+- Save all CSV files inside a folder named `data`
+- Use faker.js (or @faker-js/faker) for fake names and dates

@@ -1,0 +1,9 @@
+Create a file named queryDB.js using sqlite3
+
+Query requirements:
+Join users, orders, order_items, products
+Return columns:
+user_id, user_name, order_id, order_date, product_name, quantity, item_price, total_amount
+
+Sort by order_date DESC
+Print results in a clean console.table format
